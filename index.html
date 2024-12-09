@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,800&family=Roboto+Slab:wght@900&display=swap');
+
+:root {
+    --color-green-50: #2CE97B;
+    --color-blue-50: #19E8BF;
+
+    --color-gradient: linear-gradient(90deg, var(--color-green-50),var(--color-blue-50),var(--color-green-50));
+
+
+    --color-purple-50: #B688D2;
+    --color-purple-100: #BA59F8;
+    --color-purple-200: #AB35F4;
+
+    --color-gradient-purple: linear-gradient(90deg, var(--color-purple-50),var(--color-purple-100),var(--color-purple-200));
+
+
+
+    --color: #ADD8E6;
+    --color-1: #87CEEB;
+    --color-gradient-container: linear-gradient(90deg, var(--color),var(--color-1));
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--color-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background: var(--color-gradient-container);
+    width: 280px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 10px -10px teal;
+}
+
+#foto {
+    background: var(--color-gradient-container);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px 30px 0 0 ;
+}
+#foto img {
+    margin-top: 12px;
+    width: 120px;
+    padding: 2px;
+    border: 6px solid green;
+    border-radius: 120px;
+
+}
+
+
+#menu-links {
+    text-align: center;
+    margin: 10px;
+    height: 320px;
+}
+
+
+
+
+#lista {
+    margin: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    justify-content: space-around;
+}
+
+
+#lista li {
+    background: var(--color-gradient-purple);
+    width: 180px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#lista li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 30px;
+    width: 180px;
+    height: 48px;
+    padding-top: 15px;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+a:hover {
+	
+    background: rgb(114, 250, 132);
+
+}
+
+li i{
+    font-size: 18px;
+    padding-left: 20px;
+}
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div id="foto">
+            <img src="assets/imagens/avatar-de-homem.png" alt="Avatar-Personagem">
+        </div>
+        <div id="menu-links">
+            <hr>
+            <ul id="lista">
+                <li><a href="#">Instagram<i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#">Twitter<i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank">Facebook <i class="fa-brands fa-facebook" class="simbolo"></i></a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
